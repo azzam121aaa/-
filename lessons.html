@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-
 <meta charset="UTF-8">
 <title>الدروس</title>
 
@@ -15,30 +14,30 @@ padding:30px;
 
 .lesson{
 background:white;
-padding:25px;
-margin-bottom:30px;
+padding:30px;
+margin-bottom:40px;
 border-radius:12px;
 box-shadow:0 0 10px #ddd;
 }
 
 .example{
 background:#f9f9f9;
-padding:10px;
+padding:12px;
 margin-top:10px;
 border-right:5px solid orange;
 }
 
 .syntax{
 background:#e3f2fd;
-padding:10px;
+padding:12px;
 margin-top:10px;
 }
 
 .summary{
 background:#fff3e0;
-padding:10px;
-margin-top:15px;
-border-right:5px solid #ff7a00;
+padding:12px;
+margin-top:20px;
+border-right:5px solid orange;
 }
 
 .quiz{
@@ -46,6 +45,7 @@ background:#f1f1f1;
 padding:15px;
 margin-top:20px;
 border-radius:10px;
+display:none;
 }
 
 button{
@@ -53,16 +53,20 @@ background:orange;
 color:white;
 border:none;
 padding:10px 20px;
-margin-top:10px;
+margin-top:15px;
 border-radius:6px;
 cursor:pointer;
 }
 
-svg{
-margin-top:20px;
+</style>
+
+<script>
+
+function showQuiz(id){
+document.getElementById(id).style.display="block";
 }
 
-</style>
+</script>
 
 </head>
 
@@ -70,30 +74,41 @@ margin-top:20px;
 
 <h1>📘 الدروس</h1>
 
-
 <!-- الدرس 1 -->
 
 <div class="lesson">
 
-<h2>أسلوب الشرط والتوكيد</h2>
+<h2>أسلوب الشرط</h2>
 
 <p>
+
 أسلوب الشرط تركيب لغوي يحتاج إلى أداة تربط بين جملتين،
-الأولى شرط للثانية.
+الأولى شرط والثانية نتيجة له.
+
 </p>
+
+<h3>أركان أسلوب الشرط</h3>
+
+<ul>
+<li>أداة الشرط</li>
+<li>فعل الشرط</li>
+<li>جواب الشرط</li>
+</ul>
 
 <div class="example">
 
 إن تهمل تنظيف أسنانك ينخرها السوس  
-من يتبع نصح الطبيب يحافظ على صحته
+من يتبع نصح الطبيب يحافظ على صحته  
+إن تمارسوا الرياضة تنشط أبدانكم  
+من يسع في الخير ينل محبة الجميع
 
 </div>
 
 <h3>خريطة المفاهيم</h3>
 
-<svg width="500" height="180">
+<svg width="500" height="200">
 
-<rect x="200" y="10" width="140" height="40" fill="orange"/>
+<rect x="200" y="10" width="150" height="40" fill="orange"/>
 <text x="230" y="35" fill="white">أسلوب الشرط</text>
 
 <rect x="60" y="120" width="120" height="40" fill="#4caf50"/>
@@ -110,104 +125,135 @@ margin-top:20px;
 <div class="summary">
 
 الخلاصة  
-أسلوب الشرط يتكون من أداة الشرط وفعل الشرط وجواب الشرط.
+أسلوب الشرط يربط بين جملتين تكون الثانية نتيجة للأولى.
 
 </div>
 
-<button onclick="document.getElementById('quiz1').style.display='block'">
-تدرّب
-</button>
+<button onclick="showQuiz('q1')">تدرّب</button>
 
-<div class="quiz" id="quiz1" style="display:none">
-
-<h3>اختبار</h3>
+<div class="quiz" id="q1">
 
 <p>1- ما أداة الشرط في الجملة: من يجتهد ينجح؟</p>
 
 <input type="radio"> من  
-<input type="radio"> يجتهد  
+<input type="radio"> ينجح  
 
-<p>2- يتكون أسلوب الشرط من كم ركن؟</p>
+<p>2- يتكون أسلوب الشرط من:</p>
 
-<input type="radio"> ثلاثة  
-<input type="radio"> اثنان  
+<input type="radio"> ثلاثة أركان  
+<input type="radio"> ركنين  
+
+</div>
 
 </div>
 
-</div>
 
 
 <!-- الدرس 2 -->
 
 <div class="lesson">
 
-<h2>تنوين الاسم المقصور والمنقوص والممدود</h2>
+<h2>أسلوب التوكيد</h2>
 
 <p>
-تختلف طريقة تنوين الأسماء حسب نوعها.
+
+التوكيد أسلوب لغوي يرسخ المعنى ويقويه في نفس السامع.
+
 </p>
+
+<h3>أنواع التوكيد</h3>
+
+<ul>
+
+<li>التوكيد بكلمة (كل)</li>
+<li>التوكيد بكلمة (نفس)</li>
+<li>التوكيد بكلمة (عين)</li>
+
+</ul>
 
 <div class="example">
 
-فتىً  
-راضٍ  
-دعاءٌ
+حضر الطلاب كلهم  
+جاء المعلم نفسه  
+رأيت المدير عينه
 
 </div>
 
-<svg width="500" height="180">
+<h3>خريطة المفاهيم</h3>
 
-<rect x="200" y="10" width="140" height="40" fill="orange"/>
-<text x="230" y="35" fill="white">أنواع التنوين</text>
+<svg width="500" height="200">
 
-<rect x="60" y="120" width="120" height="40" fill="#4caf50"/>
-<text x="90" y="145" fill="white">المقصور</text>
+<rect x="200" y="10" width="150" height="40" fill="orange"/>
+<text x="230" y="35" fill="white">أسلوب التوكيد</text>
 
-<rect x="220" y="120" width="120" height="40" fill="#2196f3"/>
-<text x="250" y="145" fill="white">المنقوص</text>
+<rect x="80" y="120" width="120" height="40" fill="#4caf50"/>
+<text x="110" y="145" fill="white">كل</text>
 
-<rect x="380" y="120" width="120" height="40" fill="#9c27b0"/>
-<text x="410" y="145" fill="white">الممدود</text>
+<rect x="240" y="120" width="120" height="40" fill="#2196f3"/>
+<text x="270" y="145" fill="white">نفس</text>
+
+<rect x="400" y="120" width="120" height="40" fill="#9c27b0"/>
+<text x="430" y="145" fill="white">عين</text>
 
 </svg>
 
 <div class="summary">
 
 الخلاصة  
-لكل نوع من الأسماء طريقة خاصة في التنوين.
+التوكيد يقوي المعنى ويؤكد الكلام.
 
 </div>
 
-<button onclick="document.getElementById('quiz2').style.display='block'">
-تدرّب
-</button>
+<button onclick="showQuiz('q2')">تدرّب</button>
 
-<div class="quiz" id="quiz2" style="display:none">
+<div class="quiz" id="q2">
 
-<p>1- فتىً اسم:</p>
+<p>1- التوكيد يستخدم من أجل:</p>
 
-<input type="radio"> مقصور  
-<input type="radio"> ممدود  
+<input type="radio"> تقوية المعنى  
+<input type="radio"> حذف المعنى  
 
-<p>2- قاضٍ اسم:</p>
+<p>2- من ألفاظ التوكيد:</p>
 
-<input type="radio"> منقوص  
-<input type="radio"> مقصور  
+<input type="radio"> كل  
+<input type="radio"> ربما  
 
 </div>
 
 </div>
+
 
 
 <!-- الدرس 3 -->
 
 <div class="lesson">
 
-<h2>الألف اللينة</h2>
+<h2>تنوين المقصور والمنقوص والممدود</h2>
 
-<p>
-الألف اللينة ألف ساكنة تأتي في آخر الكلمة.
-</p>
+<div class="example">
+
+فتىً  
+قاضٍ  
+دعاءٌ
+
+</div>
+
+<div class="summary">
+
+الخلاصة  
+يختلف التنوين بحسب نوع الاسم.
+
+</div>
+
+</div>
+
+
+
+<!-- الدرس 4 -->
+
+<div class="lesson">
+
+<h2>الألف اللينة</h2>
 
 <div class="example">
 
@@ -217,19 +263,6 @@ margin-top:20px;
 
 </div>
 
-<svg width="500" height="180">
-
-<rect x="200" y="10" width="140" height="40" fill="orange"/>
-<text x="230" y="35" fill="white">الألف اللينة</text>
-
-<rect x="120" y="120" width="120" height="40" fill="#4caf50"/>
-<text x="150" y="145" fill="white">قائمة</text>
-
-<rect x="300" y="120" width="120" height="40" fill="#2196f3"/>
-<text x="330" y="145" fill="white">على صورة ياء</text>
-
-</svg>
-
 <div class="summary">
 
 الخلاصة  
@@ -237,31 +270,15 @@ margin-top:20px;
 
 </div>
 
-<button onclick="document.getElementById('quiz3').style.display='block'">
-تدرّب
-</button>
-
-<div class="quiz" id="quiz3" style="display:none">
-
-<p>1- هدى تنتهي بألف:</p>
-
-<input type="radio"> لينة  
-<input type="radio"> همزة  
-
-</div>
-
 </div>
 
 
-<!-- الدرس 4 -->
+
+<!-- الدرس 5 -->
 
 <div class="lesson">
 
-<h2>دخول حروف الجر على ما الاستفهامية</h2>
-
-<p>
-تحذف ألف ما الاستفهامية إذا سبقت بحرف جر.
-</p>
+<h2>دخول حروف الجر على ما</h2>
 
 <div class="example">
 
@@ -281,142 +298,101 @@ margin-top:20px;
 </div>
 
 
-<!-- الدرس 5 -->
-
-<div class="lesson">
-
-<h2>رفع الفعل المضارع</h2>
-
-<p>
-يرفع الفعل المضارع إذا لم يسبقه ناصب أو جازم.
-</p>
-
-<div class="example">
-
-يكتب الطالب الدرس
-
-</div>
-
-<div class="syntax">
-
-الإعراب  
-
-يكتب : فعل مضارع مرفوع  
-الطالب : فاعل مرفوع  
-الدرس : مفعول به منصوب
-
-</div>
-
-<div class="summary">
-
-الخلاصة  
-يرفع الفعل المضارع بالضمة أو بثبوت النون.
-
-</div>
-
-</div>
-
 
 <!-- الدرس 6 -->
 
 <div class="lesson">
 
-<h2>نصب الفعل المضارع</h2>
-
-<p>
-ينصب الفعل المضارع إذا سبقه حرف نصب.
-</p>
+<h2>رفع الفعل المضارع</h2>
 
 <div class="example">
 
-لن يهمل الطالب واجبه
+تنشط الرياضة الأبدان
+
+</div>
+
+<div class="syntax">
+
+تنشط : فعل مضارع مرفوع  
+الرياضة : فاعل  
+الأبدان : مفعول به
 
 </div>
 
 <div class="summary">
 
 الخلاصة  
-ينصب الفعل المضارع بالفتحة أو حذف النون.
+يرفع الفعل المضارع بالضمة.
 
 </div>
 
 </div>
+
 
 
 <!-- الدرس 7 -->
 
 <div class="lesson">
 
-<h2>جزم الفعل المضارع</h2>
-
-<p>
-يجزم الفعل المضارع إذا سبقه حرف جزم.
-</p>
+<h2>نصب الفعل المضارع</h2>
 
 <div class="example">
 
-لم يكتب الطالب
+لن يذهب الطالب
 
 </div>
 
 <div class="summary">
 
 الخلاصة  
-يجزم الفعل المضارع بالسكون أو حذف حرف العلة.
+ينصب الفعل المضارع بالفتحة.
 
 </div>
 
 </div>
+
 
 
 <!-- الدرس 8 -->
 
 <div class="lesson">
 
-<h2>اسم الزمان والمكان</h2>
-
-<p>
-اسم مشتق يدل على زمان وقوع الفعل أو مكانه.
-</p>
+<h2>جزم الفعل المضارع</h2>
 
 <div class="example">
 
-موعد  
-مسجد
+لم يقصر صالح
 
 </div>
 
 <div class="summary">
 
 الخلاصة  
-يأتي اسم الزمان والمكان غالباً على وزن مفعل.
+يجزم الفعل المضارع بالسكون.
 
 </div>
 
 </div>
+
 
 
 <!-- الدرس 9 -->
 
 <div class="lesson">
 
-<h2>المشتقات والمصدر</h2>
-
-<p>
-المصدر اسم يدل على حدث مجرد من الزمن.
-</p>
+<h2>اسم الزمان والمكان</h2>
 
 <div class="example">
 
-كتب - كتابة  
-جلس - جلوس
+مسجد  
+موعد
 
 </div>
 
 <div class="summary">
 
 الخلاصة  
-المصدر يدل على الحدث دون ارتباط بزمن.
+يدل على مكان أو زمان حدوث الفعل.
 
 </div>
 
